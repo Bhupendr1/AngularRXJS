@@ -1,0 +1,58 @@
+
+<mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile>
+        <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Promise</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <ul class="list-unstyled">
+                <li>{{promiseValue?.brand}}</li>
+                <li>{{promiseValue?.harddisk}}</li>
+                <li>{{promiseValue?.color}}</li>
+                <li>{{promiseValue?.status}}</li>
+            </ul>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile><mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Async / Await with promiss</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <li>{{promiseValue?.status}}</li>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button (click)="fetch1()">buy</button>
+         </mat-card-actions>
+      </mat-card></mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>Async / Await</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <li>{{promiseValue?.status}}</li>
+            </mat-card-content>
+    
+            <mat-card-actions>
+                <button mat-button (click)="fetch2()">buy</button>
+             </mat-card-actions>
+          </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>Async / Await with fetch Api</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <li>{{promiseValue?.status}}</li>
+            </mat-card-content>
+
+            <mat-card-actions>
+                <button mat-button (click)="fetch3()">buy</button>
+             </mat-card-actions>
+          </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+  

@@ -1,0 +1,8 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .butttonspacer{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }

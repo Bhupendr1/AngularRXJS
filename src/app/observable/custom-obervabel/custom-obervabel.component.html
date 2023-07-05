@@ -1,0 +1,36 @@
+<mat-card>
+    <mat-card-title>
+        Custom Observable
+    </mat-card-title>
+</mat-card>
+<div class="row">
+    <div class="col-md-6">
+        <strong>ex - 01(Manual)</strong>
+        <hr>
+        <ul class="techList" id="elContainer" [ngClass]="techStatus=='completed'?'completed':techStatus=='error'?'error':''"></ul>
+    </div>
+    <div class="col-md-6">
+        <strong>ex - 01(Custom Interval Observable)</strong>
+        <hr>
+        <ul class="techList" id="elContainer2" [ngClass]="techStatus2=='completed'?'completed':techStatus2=='error'?'error':''">
+        </ul>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <strong>Ex - 03 (Random Names)</strong>
+        <p class="bg-light py-2 px-3 border rounded">
+            <strong>Random Names:</strong>
+            'Anup','Rakesh','Ankit','bhupendra','Shobit','Sharul','robert'
+        </p>
+        <hr>
+        <p>Current Name : <strong>{{names}}</strong></p>
+        <span class="badge rounded-pill" [ngClass]="nameStatus=='completed' ? 'text-bg-success': nameStatus=='error' ? 'text-bg-danger': 'text-bg-primary'">
+           {{nameStatus=='completed' ? 'success': nameStatus=='error' ? 'Error': 'Running'}}
+        </span>
+
+        <!-- <span class="badge" [ngClass]="nameStatus=='completed' ? 'badge-success': nameStatus=='error' ? 'badge-danger': 'badge-primary'">
+      success
+        </span> -->
+    </div>
+</div>
