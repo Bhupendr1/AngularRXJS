@@ -8,9 +8,11 @@ import { IntervalComponent } from './observable/interval/interval.component';
 import { OfFromComponent } from './observable/of-from/of-from.component';
 import { ToArrayComponent } from './observable/to-array/to-array.component';
 import { CustomObervabelComponent } from './observable/custom-obervabel/custom-obervabel.component';
+import { UnsubscribCompComponent } from './unsubscrib-comp/unsubscrib-comp.component';
 
 const routes: Routes = [
   {path:'promise',component:PromissComponent},
+  {path:'unsubscribePage',component:UnsubscribCompComponent},
   {path:'observable',component:ObservableComponent,
   children:[
     {path:'',component:ListComponent},

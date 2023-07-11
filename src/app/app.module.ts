@@ -20,6 +20,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import { OfFromComponent } from './observable/of-from/of-from.component';
 import { ToArrayComponent } from './observable/to-array/to-array.component';
 import { CustomObervabelComponent } from './observable/custom-obervabel/custom-obervabel.component';
+import { UnsubscribCompComponent } from './unsubscrib-comp/unsubscrib-comp.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { CustomObervabelComponent } from './observable/custom-obervabel/custom-o
     IntervalComponent,
     OfFromComponent,
     ToArrayComponent,
-    CustomObervabelComponent
+    CustomObervabelComponent,
+    UnsubscribCompComponent
   ],
   imports: [
     BrowserModule,
